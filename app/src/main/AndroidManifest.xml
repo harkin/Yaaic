@@ -29,7 +29,7 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="Yaaic"
-        android:theme="@style/Theme.Yaaic"
+        android:theme="@style/Light.Yaaic"
         android:allowBackup="true"
         android:name=".YaaicApplication">
         <activity android:name=".activity.MainActivity"

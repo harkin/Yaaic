@@ -30,6 +30,14 @@
         <item>19</item>
         <item>20</item>
     </string-array>
+    <string-array name="theme_labels" translatable="false">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="theme_values" translatable="false">
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
     <string-array name="reconnect_interval_labels">
         <item>@string/minute_1</item>
         <item>@string/minutes_5</item>

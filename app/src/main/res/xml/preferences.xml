@@ -148,6 +148,14 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
     </PreferenceCategory>
     <PreferenceCategory
         android:title="@string/settings_misc">
+        <ListPreference
+            android:title="@string/settings_theme_title"
+            android:summary="@string/settings_theme_desc"
+            android:dialogTitle="@string/settings_theme_dialog_title"
+            android:entries="@array/theme_labels"
+            android:entryValues="@array/theme_values"
+            android:key="@string/key_theme"
+            android:defaultValue="@string/default_theme" />
         <EditTextPreference
             android:title="@string/settings_quitmessage_title"
             android:summary="@string/settings_quitmessage_desc"
