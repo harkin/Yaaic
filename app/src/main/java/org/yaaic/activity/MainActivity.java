@@ -49,6 +49,7 @@ import org.yaaic.listener.ServerListener;
 import org.yaaic.model.Broadcast;
 import org.yaaic.model.Extra;
 import org.yaaic.model.Server;
+import org.yaaic.model.Settings;
 import org.yaaic.model.Status;
 import org.yaaic.receiver.ServerReceiver;
 
@@ -69,6 +70,9 @@ public class MainActivity extends AppCompatActivity implements YaaicActivity, Se
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Settings settings = new Settings(getApplicationContext());
+        setTheme(settings.getTheme());
 
         setContentView(R.layout.activity_main);
 

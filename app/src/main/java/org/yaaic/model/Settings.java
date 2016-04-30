@@ -25,6 +25,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.preference.PreferenceManager;
+import android.support.annotation.StyleRes;
 
 import org.yaaic.R;
 
@@ -348,5 +349,19 @@ public class Settings
         } catch (NumberFormatException e) {
             return Integer.parseInt(resources.getString(R.string.default_history_size));
         }
+    }
+
+    /**
+     * Get the selected theme
+     *
+     * @return the style resource id of the selected theme
+     */
+    @StyleRes public int getTheme() {
+        String defaultValue = resources.getString(R.string.default_theme);
+        String theme = preferences.getString(
+                resources.getString(R.string.key_theme),
+                defaultValue);
+
+        return theme.equals(defaultValue) ? R.style.Light_Yaaic : R.style.Dark_Yaaic;
     }
 }
